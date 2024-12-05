@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="dist/output.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Hello</title>
+  </head>
+  <body>
+    <header>
+      <nav class="absolute w-full">
+        <div class="container">
+          <div class="flex justify-between items-center">
+            <div class="relative">
+              <input type="search" placeholder="search" class="bg-transparent outline-none pl-5 text-black">
+              <span class="left-0 absolute"><i class="fa-solid fa-magnifying-glass "></i></span>
+            </div>
+            <a class="md:hidden icon absolute right-2" onclick="hamburger_menu()"><i class="fa fa-bars "></i></a>
+            <div class="hidden md:block  w-full">
+              <ul class=" justify-end md:flex md:right-0" id="myLinks">
+                <a href="javascript:void(0);" onclick="close()" id="ham_close" class="absolute right-0 block p-2 text-white hover:bg-white hover:text-black md:hidden"><i class="fa-solid fa-x"></i></a>
+                <li><a href="#" class="text-white block bg-[#333] hover:bg-[#ddd] m-0 md:hover:bg-transparent md:hover:text-blue-600 md:bg-transparent md:text-black">Blog</a></li>
+                <li><a href="#" class="px-5 text-white block bg-[#333] hover:bg-[#ddd] m-0 md:hover:bg-transparent md:hover:text-blue-600 md:bg-transparent md:text-black">About</a></li>
+                <li><a href="#" class="text-white block bg-[#333] hover:bg-[#ddd] m-0 md:hover:bg-transparent md:hover:text-blue-600 md:bg-transparent md:text-black">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          
+      </nav>
+      
+  </header>
+  <main>
+    <section class="flex justify-center items-center h-screen " style="background-image: url('dist/img/b-img-1.avif');">
+      <div>
+        <h1 class="text-3xl font-extrabold md:text-6xl">We are the leaders <br> in <b class="text-blue-600">Interior Planning</b></h1>
+        <p class="mt-7 font-semibold text-xs md:text-xl ">Creating convenient and attractive interiors for a wide  <br>  variety of purposes. Full support in the selection of finish <br>materials, furniture, equipment, and accessories.</p>
+        <a href="#" class="inline-block mt-5 text-white text-xs md:text-xl bg-blue-700 hover:bg-blue-900 rounded-3xl py-2 px-5 md:py-4 md:px-10">Explore our work</a>
+      </div>
+      <div class="absolute left-[50px] bottom-[50px]">
+        <ul class="flex">
+          <li><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-facebook-f text-2xl"></i></a></li>
+          <li class="px-5"><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-twitter text-2xl"></i></a></li>
+          <li><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-instagram text-2xl"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="relative h-screen bg-no-repeat bg-cover" style="background-image: url('dist/img/page_2_bg.jpg');">
+      <div class="container">
+        <h2 class="text-3xl md:text-6xl text-white font-extrabold ">Our Services</h2>
+        <div class="md:grid md:grid-cols-4 gap-4 mt-10">
+          <div class="w-2/3 text-justify md:text-left">
+            <h3 class="text-xl md:text-3xl font-extrabold text-white mb-10">Architectural<br> Services</h3>
+            <p class="text-white mb-5">Architectural services include design,preparation of construction documents, and construction administration</p>
+            <a href="#" class="font-bold text-white text-xl hover:text-red-900 md:text-2xl underline ">Learn more</a>
+          </div>
+          <div class="my-6 md:my-0 w-2/3  text-justify md:text-left">
+            <h3 class="text-xl md:text-3xl font-extrabold text-white mb-10">Architectural<br> Services</h3>
+            <p class="text-white mb-5">Architectural services include design,preparation of construction documents, and construction administration</p>
+            <a href="#" class="font-bold text-white text-xl hover:text-red-900 md:text-2xl underline">Learn more</a>
+          </div>
+          <div class="w-2/3 text-justify md:text-left">
+            <h3 class="text-xl md:text-3xl font-extrabold text-white mb-10">Architectural<br> Services</h3>
+            <p class="text-white mb-5">Architectural services include design,preparation of construction documents, and construction administration</p>
+            <a href="#" class="font-bold text-white text-xl hover:text-red-900 md:text-2xl underline">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="items-center h-screen flex relative justify-left bg-cover bg-center before:content before:block before:w-1/2 before:h-full before:absolute before:z-0 before:bg-white before:bg-opacity-80" style="background-image: url('dist/img/page_3_bg.jpg');">
+      <div class="container">
+        <div class="grid grid-cols-2 relative ml-5 md:ml-0">
+          <div class="">
+            <h1 class="text-black font-extrabold text-2xl md:text-5xl ">Single Family</h1>
+            <h3 class="font-extrabold text-xs md:text-xl mt-5">Catharine Street Residence</h3>
+            <p class="text-justify w-2/3   text-xs  mt-5 md:font-bold">Complete renovation of an existing three  storey row house with a new three storey rear addition with new pilot house, and roof deck.</p>
+            <a href="#" class="border-2 border-blue-800 rounded-3xl px-4 py-2 hover:bg-blue-800 hover:text-white inline-block mt-5 text-xs text-blue-800 md:px-8">View case study</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-2 left-1/2 -translate-x-2/4">
+        <a href="#" class="bg-white border-2 rounded-3xl py-2 px-3 border-white hover:bg-blue-700 hover:border-blue-700"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <section class="flex relative justify-center items-center h-screen bg-no-repeat bg-cover" style="background-image: url('dist/img/page_4_bg.jpg');">
+      <div>
+        <h1 class="text-3xl md:text-5xl text-white font-extrabold mb-5">Ready to get started?</h1>
+        <input type="search" placeholder="E-mail" class=" text-2xl bg-transparent outline-none  text-white  ">
+        <hr class="w-2/3">
+        <div class="mt-7">
+          <a href="#" class="border-2 border-white text-blue-700 bg-white rounded-3xl px-5 md:px-10 py-2 font-bold hover:bg-blue-700 hover:text-white hover:border-blue-700  ">Send request</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container relative">
+      <div class="grid md:grid-cols-2 justify-between">
+        <div class="col-span-4 grid grid-cols-3 grid-rows-2 md:grid-cols-5 md:grid-rows-none mt-10 ml-8">
+          <div class="leading-loose">
+            <ul>
+              <li><a href="#" class="font-bold text-xl">About</a></li>
+              <li><a href="#" class="hover:text-blue-700">Team</a></li>
+            </ul>
+          </div>
+          <div class=" leading-loose">
+            <ul>
+              <li><a href="#" class="font-bold text-xl">Services</a></li>
+              <li><a href="#" class="hover:text-blue-700">Architectural</a></li>
+              <li><a href="#" class="hover:text-blue-700">Expediting</a></li>
+              <li><a href="#" class="hover:text-blue-700">Consultant</a></li>
+            </ul>
+          </div>
+          <div class="leading-loose">
+            <ul>
+              <li><a href="#" class="font-bold text-xl">Projects</a></li>
+              <li><a href="#" class="hover:text-blue-700">Single Family</a></li>
+              <li><a href="#" class="hover:text-blue-700">Multi Family</a></li>
+              <li><a href="#" class="hover:text-blue-700">Mixed Use</a></li>
+              <li><a href="#" class="hover:text-blue-700">Restaurant</a></li>
+              <li><a href="#" class="hover:text-blue-700">Hospitality</a></li>
+            </ul>
+          </div>
+          <div class="leading-loose">
+            <ul>
+              <li><a href="#" class="font-bold text-xl">Blog</a></li>
+              <li><a href="#" class="hover:text-blue-700">News</a></li>
+              <li><a href="#" class="hover:text-blue-700">Case Studies</a></li>
+              <li><a href="#" class="hover:text-blue-700">Interviews</a></li>
+            </ul>
+          </div>
+          <div class="leading-loose">
+            <ul>
+              <li><a href="#" class="font-bold text-xl">Contact</a></li>
+              <li><a href="#" class="hover:text-blue-700">Careers</a></li>
+              <li><a href="#" class="hover:text-blue-700">Publications</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="flex col-start-1 col-span-1">
+          <li><a href="#" class=" hover:text-blue-600"><i class="fa-brands fa-facebook-f text-2xl"></i></a></li>
+          <li class="px-5"><a href="#" class=" hover:text-blue-600"><i class="fa-brands fa-twitter text-2xl"></i></a></li>
+          <li><a href="#" class=" hover:text-blue-600"><i class="fa-brands fa-instagram text-2xl"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="dist/js/script.js"></script>
+  </body>
+</html>
