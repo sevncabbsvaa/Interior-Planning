@@ -1,12 +1,10 @@
-let x= document.getElementById("myLinks");
-function hamburger_menu() { 
-    if (x.style.display==="block"){
-        x.style.display = "hidden";
+let x=document.getElementById("myLinks");
+let button= document.getElementById("button");
+function menu() {
+    if(x.style.display==="block") {
+        x.style.display="none";
     }
     else {
-        x.style.display = "block";
+        x.style.display="block";
     }
-}
-function close() {
-    x.style.display="hidden";
 }
